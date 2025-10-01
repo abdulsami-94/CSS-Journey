@@ -147,9 +147,24 @@ h3 {
     letter-spacing: 5px;
 }
 
-.img 
+
+.poster
 {
-    display: flex;
+    margin: 0px;
+    padding: 75px;
     justify-content: center;
+    display: flex;
     align-items: center;
+    flex-direction: column;
+    background-image: url('BH2.png');
+    background-repeat: no-repeat;
+    background-position: center;
 }
+
+.reg 
+{
+    border-radius: 50px;
+    padding: 10px;
+    background: white;
+}
+
