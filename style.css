@@ -1,23 +1,59 @@
-/* Reset some default styles */
-* {
-    margin: 0;
-    padding: 0;
+*,
+*::before,
+*::after {
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Body styling */
-body {
+body{
+    margin:0;
+    font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    -webkit-font-smoothing:antialiased;     /*only for macos and ios*/
     background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
     color: #333;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
+    padding: 0;
+    line-height: 1.6;
+  }
+
+header {
+    background-color: #333;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
 }
 
-/* Headings */
+header h1 {
+    color: #fff;
+    margin: 0;
+}
+
+.task {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+    max-width: 900px; 
+    margin: 0 auto;   
+    padding: 20px;
+}
+
+.card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.card h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.card a {  
+    display: inline-block; 
+    text-align: center;
+}
+
 h1 {
     font-size: 2rem;
     margin: 30px 0 15px 0;
@@ -27,15 +63,13 @@ h1 {
     text-align: center;
 }
 
-/* Links styling */
 a {
     display: inline-block;
     text-decoration: none;
     color: #ffffff;
     background: #4a90e2;
-    padding: 12px 25px;
+    padding: 10px 20px;
     border-radius: 8px;
-    margin-bottom: 20px;
     transition: all 0.3s ease;
     font-weight: 600;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
@@ -47,22 +81,31 @@ a:hover {
     box-shadow: 0 8px 12px rgba(0,0,0,0.2);
 }
 
-/* Container flexibility */
 body > a, body > h1 {
-    width: 90%;
     max-width: 500px;
 }
 
-/* Responsive design */
+footer {
+    padding: 10px;
+    text-align: center;
+    background-color: #333;
+    width: 100%;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.joke {
+    font-style: italic;
+    padding-bottom: 20px
+}
+
 @media (max-width: 768px) {
-    h1 {
-        font-size: 1.6rem;
+    .task {
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    a {
-        width: 100%;
-        text-align: center;
-        padding: 10px 20px;
+    h1 {
+        font-size: 1.6rem;
     }
 }
 
@@ -74,5 +117,9 @@ body > a, body > h1 {
     a {
         padding: 8px 15px;
         font-size: 0.9rem;
+    }
+
+    .task {
+        grid-template-columns: 1fr;
     }
 }
