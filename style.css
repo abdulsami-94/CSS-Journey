@@ -81,6 +81,12 @@ a:hover {
     box-shadow: 0 8px 12px rgba(0,0,0,0.2);
 }
 
+.card:hover {
+    background: #fbfbfb;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0,0,0,0.5);
+}
+
 body > a, body > h1 {
     max-width: 500px;
 }
