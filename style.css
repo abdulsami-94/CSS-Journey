@@ -8,14 +8,14 @@ body{
     margin:0;
     font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
     -webkit-font-smoothing:antialiased;     /*only for macos and ios*/
-    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
-    color: #333;
+    background: #0D1117;
+    color: #C9D1D9;
     padding: 0;
     line-height: 1.6;
   }
 
 header {
-    background-color: #333;
+    background-color: #161B22;
     width: 100%;
     padding: 10px;
     text-align: center;
@@ -37,7 +37,7 @@ header h1 {
 }
 
 .card {
-    background: #fff;
+    background: #1E252F;
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
@@ -67,7 +67,7 @@ a {
     display: inline-block;
     text-decoration: none;
     color: #ffffff;
-    background: #4a90e2;
+    background: #238636;
     padding: 10px 20px;
     border-radius: 8px;
     transition: all 0.3s ease;
@@ -76,13 +76,14 @@ a {
 }
 
 a:hover {
-    background: #357ABD;
+    background: #2EA043;
     transform: translateY(-3px);
     box-shadow: 0 8px 12px rgba(0,0,0,0.2);
 }
 
 .card:hover {
-    background: #fbfbfb;
+    background: #2A303C
+;
     transform: translateY(-5px);
     box-shadow: 0 8px 12px rgba(0,0,0,0.5);
 }
@@ -94,7 +95,7 @@ body > a, body > h1 {
 footer {
     padding: 10px;
     text-align: center;
-    background-color: #333;
+    background-color: #0A0E13;
     width: 100%;
     color: #fff;
     margin-top: 20px;
