@@ -1,6 +1,6 @@
 :root {
     --primary-color: #181818;
-    --secondary-color: #828282;
+    --secondary-color: #bfbfbf;
     --nav-bg: #121212;
     --link-hover: #ffffff;
     --gap: 2rem;
@@ -47,11 +47,11 @@ body {
     padding-bottom: 0;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .nav__logo img {
-    width: 20px;
+    width: 36px;
     height: auto;
     margin-right: auto;
 }
@@ -109,7 +109,7 @@ body {
 /*   Hero section   */
 
 .mac {
-    background-image: url(m5.jpg);
+    background-image: url(Images/m5.jpg);
     background-position: center;
     background-size: cover;
     min-height: 60vh;
@@ -124,7 +124,7 @@ body {
 }
 
 .iphone {
-    background-image: url(iphone.png);
+    background-image: url(Images/iphone.png);
     background-position: center;
     background-size: cover;
     min-height: 60vh;
@@ -187,7 +187,6 @@ body {
     gap: 20px;
     padding: 10px;
     border: 1px solid #ddd;
-    height: 100vh;
     background-color: white;
 }
 
